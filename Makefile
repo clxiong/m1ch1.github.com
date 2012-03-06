@@ -1,5 +1,5 @@
-LATEXSRC    = resume.tex
-PDFFILE     = resume.pdf
+LATEXSRC    = michi.tex
+PDFFILE     = michi.pdf
 PDFVIEWER   = /Applications/Preview.app/Contents/MacOS/Preview
 LATEX       = /opt/local/bin/pdflatex 
 
