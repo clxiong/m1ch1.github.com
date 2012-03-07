@@ -12,4 +12,4 @@ view: $(PDFFILE)
 	$(PDFVIEWER) $< &
 
 clean:
-	rm -f $(PDFFILE)
+	rm -f $(PDFFILE) michi.aux  michi.log
