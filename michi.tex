@@ -1,5 +1,5 @@
 \documentclass[10pt]{article}
-\usepackage[margin=1in,noheadfoot]{geometry}
+\usepackage[margin=0.8in,noheadfoot]{geometry}
 
 \newcommand{\name}[1]{\begin{center}\Large{\textsc{#1}}\end{center}}
 \newcommand{\HRule}{\noindent\rule{\linewidth}{0.1mm}}
@@ -10,18 +10,16 @@
 \renewcommand{\name}[2]{\noindent \textsc{\LARGE{#1}}\hspace{\stretch{1}}#2\vspace{-0.2cm}}
 \begin{document}
 
-%\name{Michi Mutsuzaki}
-
 \name{Michi Mutsuzaki}{\texttt{Email:michi@cs.stanford.edu}}
-
-%\header{Objective} Seeking an entry-level full-time position in software engineering. 
 
 \header{Professional Experience}
 
 \subheader{Research Engineer, Yahoo! Inc.}{July 2011 - Present}
 \begin{list}{\labelitemi}{\leftmargin=1em}
-\item \textbf{Walnut} - Walnut is Yahoo's next generation cloud object store.
-
+\item \textbf{Walnut} - Walnut is an elastic object store that aims to efficiently
+support various workloads including storing large blobs, small key-value look up,
+and HDFS-style block access. I've been involved in design discussions, defining APIs,
+prototyping and benchmarking. 
 
 \item \textbf{YCSB} - YCSB is an open source benchmark tool for cloud storage
 systems. As the current maintainer, I'm responsible for adding new features, 
@@ -37,13 +35,13 @@ Yahoo's cloud platform.
 
 \subheader{Software Engineer, Yahoo! Inc.}{July 2007 - July 2011}
 \begin{list}{\labelitemi}{\leftmargin=1em}
-\item \textbf{PNUTS} Yahoo!'s next generation data storage platform,
-which combines high capacity and high performance and high 
-availability and global distribution at low cost per gigabyte and per transaction. 
+\item \textbf{PNUTS} - PNUTS is a geographically replicated NoSQL database. I
+worked on various aspects of the system including HTTP proxy server, client
+library, and evaluation of various storage engines.
 
-\item \textbf{ZooKeeper} Yahoo!'s next generation data storage platform,
-which combines high capacity and high performance and high 
-availability and global distribution at low cost per gigabyte and per transaction. 
+\item \textbf{ZooKeeper} - ZooKeeper is an open source distributed contribution
+system. My responsibilities as a committer included reviewing and applying patches,
+fixing bugs, and running performance tests.
 \end{list}
 
 \vspace{0.2cm}
@@ -52,10 +50,9 @@ availability and global distribution at low cost per gigabyte and per transactio
 
 \noindent
 \begin{list}{\labelitemi}{\leftmargin=1em}
-\item Worked on the Trio project with Prof. Jennifer Widom. Implemented the
-first prototype of the Trio system, including the core database engine and
-a web interface to the system using PostgreSQL and Python. Demonstrated the
-system in VLDB 2006 and CIDR 2007. 
+\item \textbf{Trio} - Trio is a database system that incorporate uncertainty
+and lineage. I implemented the first prototype, including the core database
+engine and a web interface to the system using PostgreSQL and Python.
 \end{list}
 
 \vspace{0.2cm}
