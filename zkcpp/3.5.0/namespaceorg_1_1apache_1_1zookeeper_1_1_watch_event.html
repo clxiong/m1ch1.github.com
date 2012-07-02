@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>ZooKeeper C++ Client Library: org::apache::zookeeper::WatchEvent Namespace Reference</title>
+<title>zkcpp: A ZooKeeper C++ Client Library: org::apache::zookeeper::WatchEvent Namespace Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">ZooKeeper C++ Client Library
+   <div id="projectname">zkcpp: A ZooKeeper C++ Client Library
    
    </div>
    
@@ -50,6 +50,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -90,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><b>org</b>      </li>
+      <li class="navelem"><a class="el" href="namespaceorg.html">org</a>      </li>
       <li class="navelem"><b>apache</b>      </li>
       <li class="navelem"><a class="el" href="namespaceorg_1_1apache_1_1zookeeper.html">zookeeper</a>      </li>
       <li class="navelem"><a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_watch_event.html">WatchEvent</a>      </li>
@@ -113,11 +114,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Enumerations</h2></td></tr>
 <tr class="memitem:ad4638bece7844d6139ae33b1e6c9400e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_watch_event.html#ad4638bece7844d6139ae33b1e6c9400e">type</a> { <br/>
 &#160;&#160;<a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_watch_event.html#ad4638bece7844d6139ae33b1e6c9400ea04c4bcbf092b05089658b36e832d9482">SessionStateChanged</a> =  -1, 
-<a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_watch_event.html#ad4638bece7844d6139ae33b1e6c9400ea1ca78c9e4d98a66c28473c2667bce07e">NodeCreated</a> =  1, 
-<a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_watch_event.html#ad4638bece7844d6139ae33b1e6c9400eabdf95aa45511c008efce8cb7485d69d6">NodeDeleted</a> =  2, 
-<a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_watch_event.html#ad4638bece7844d6139ae33b1e6c9400ea9f02531e8c143f883a25b5fcf3d454af">NodeDataChanged</a> =  3, 
+<a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_watch_event.html#ad4638bece7844d6139ae33b1e6c9400eab4934cdc763dae16440825e4a08af08d">ZnodeCreated</a> =  1, 
+<a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_watch_event.html#ad4638bece7844d6139ae33b1e6c9400ea7ea87274331c913440a95353e1fdd533">ZnodeRemoved</a> =  2, 
+<a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_watch_event.html#ad4638bece7844d6139ae33b1e6c9400eaf8599c890375814faac4648c0c7bcc5e">ZnodeDataChanged</a> =  3, 
 <br/>
-&#160;&#160;<a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_watch_event.html#ad4638bece7844d6139ae33b1e6c9400ea978053bd1731037de4746e2e59d36e16">NodeChildrenChanged</a> =  4
+&#160;&#160;<a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_watch_event.html#ad4638bece7844d6139ae33b1e6c9400ea2256bb1ea92842d7ff4308b5fbfb0973">ZnodeChildrenChanged</a> =  4
 <br/>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
@@ -145,19 +146,19 @@ const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 <p>Session state has changed. </p>
 <p>This is generated when a client loses contact or reconnects with a server. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ad4638bece7844d6139ae33b1e6c9400ea1ca78c9e4d98a66c28473c2667bce07e"></a>NodeCreated</em>&nbsp;</td><td>
-<p>Node has been created. </p>
+<tr><td valign="top"><em><a class="anchor" id="ad4638bece7844d6139ae33b1e6c9400eab4934cdc763dae16440825e4a08af08d"></a>ZnodeCreated</em>&nbsp;</td><td>
+<p>Znode has been created. </p>
 <p>This event is triggered for watches that were set using <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_zoo_keeper.html#a220822038400a29a77777dd579893cc8" title="Checks the existence of a znode in zookeeper asynchronously.">ZooKeeper::exists()</a>, but not for those that were set using <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_zoo_keeper.html#a0194a5ae8e0174edac0145f0c79b8649" title="Gets the data associated with a znode.">ZooKeeper::get()</a> or <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_zoo_keeper.html#ac61105caf55dc64510cb77e925a96297" title="Gets the children and the stat of a znode asynchronously.">ZooKeeper::getChildren()</a>. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ad4638bece7844d6139ae33b1e6c9400eabdf95aa45511c008efce8cb7485d69d6"></a>NodeDeleted</em>&nbsp;</td><td>
-<p>Node has been deleted. </p>
+<tr><td valign="top"><em><a class="anchor" id="ad4638bece7844d6139ae33b1e6c9400ea7ea87274331c913440a95353e1fdd533"></a>ZnodeRemoved</em>&nbsp;</td><td>
+<p>Znode has been removed. </p>
 <p>This event is triggered for watches that were set using any of <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_zoo_keeper.html#a220822038400a29a77777dd579893cc8" title="Checks the existence of a znode in zookeeper asynchronously.">ZooKeeper::exists()</a>, <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_zoo_keeper.html#a0194a5ae8e0174edac0145f0c79b8649" title="Gets the data associated with a znode.">ZooKeeper::get()</a>, or <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_zoo_keeper.html#ac61105caf55dc64510cb77e925a96297" title="Gets the children and the stat of a znode asynchronously.">ZooKeeper::getChildren()</a>. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ad4638bece7844d6139ae33b1e6c9400ea9f02531e8c143f883a25b5fcf3d454af"></a>NodeDataChanged</em>&nbsp;</td><td>
-<p>Node data has changed. </p>
+<tr><td valign="top"><em><a class="anchor" id="ad4638bece7844d6139ae33b1e6c9400eaf8599c890375814faac4648c0c7bcc5e"></a>ZnodeDataChanged</em>&nbsp;</td><td>
+<p>Znode data has changed. </p>
 <p>This event is triggered for watches that were set using <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_zoo_keeper.html#a220822038400a29a77777dd579893cc8" title="Checks the existence of a znode in zookeeper asynchronously.">ZooKeeper::exists()</a> or <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_zoo_keeper.html#a0194a5ae8e0174edac0145f0c79b8649" title="Gets the data associated with a znode.">ZooKeeper::get()</a>, but not for those that were set using <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_zoo_keeper.html#ac61105caf55dc64510cb77e925a96297" title="Gets the children and the stat of a znode asynchronously.">ZooKeeper::getChildren()</a>. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ad4638bece7844d6139ae33b1e6c9400ea978053bd1731037de4746e2e59d36e16"></a>NodeChildrenChanged</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="ad4638bece7844d6139ae33b1e6c9400ea2256bb1ea92842d7ff4308b5fbfb0973"></a>ZnodeChildrenChanged</em>&nbsp;</td><td>
 <p>A change has occurred in the list of children. </p>
 <p>This event is triggered for watches that were set using <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_zoo_keeper.html#ac61105caf55dc64510cb77e925a96297" title="Gets the children and the stat of a znode asynchronously.">ZooKeeper::getChildren()</a>, but not for those that were set using <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_zoo_keeper.html#a0194a5ae8e0174edac0145f0c79b8649" title="Gets the data associated with a znode.">ZooKeeper::get()</a> or <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_zoo_keeper.html#a220822038400a29a77777dd579893cc8" title="Checks the existence of a znode in zookeeper asynchronously.">ZooKeeper::exists()</a>. </p>
 </td></tr>
@@ -171,7 +172,7 @@ const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 3 2012 00:57:11 for ZooKeeper C++ Client Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2012 19:07:05 for zkcpp: A ZooKeeper C++ Client Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

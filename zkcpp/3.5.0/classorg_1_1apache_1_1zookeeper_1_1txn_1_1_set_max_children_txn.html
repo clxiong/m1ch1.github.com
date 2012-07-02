@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>ZooKeeper C++ Client Library: org::apache::zookeeper::Acl Class Reference</title>
+<title>zkcpp: A ZooKeeper C++ Client Library: org::apache::zookeeper::txn::SetMaxChildrenTxn Class Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">ZooKeeper C++ Client Library
+   <div id="projectname">zkcpp: A ZooKeeper C++ Client Library
    
    </div>
    
@@ -50,6 +50,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -72,6 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -91,10 +93,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><b>org</b>      </li>
+      <li class="navelem"><a class="el" href="namespaceorg.html">org</a>      </li>
       <li class="navelem"><b>apache</b>      </li>
       <li class="navelem"><a class="el" href="namespaceorg_1_1apache_1_1zookeeper.html">zookeeper</a>      </li>
-      <li class="navelem"><a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_acl.html">Acl</a>      </li>
+      <li class="navelem"><b>txn</b>      </li>
+      <li class="navelem"><a class="el" href="classorg_1_1apache_1_1zookeeper_1_1txn_1_1_set_max_children_txn.html">SetMaxChildrenTxn</a>      </li>
     </ul>
   </div>
 </div>
@@ -102,41 +105,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">org::apache::zookeeper::Acl Class Reference</div>  </div>
+<div class="title">org::apache::zookeeper::txn::SetMaxChildrenTxn Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="classorg_1_1apache_1_1zookeeper_1_1_acl-members.html">List of all members.</a></p>
+<p><a href="classorg_1_1apache_1_1zookeeper_1_1txn_1_1_set_max_children_txn-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a55e4c2ff3e9568d719a325921e3ff403"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55e4c2ff3e9568d719a325921e3ff403"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Acl</b> (const std::string &amp;scheme, const std::string &amp;expression, int32_t permissions)</td></tr>
-<tr class="memitem:abd1580e21eb0aedcefd533fb3355b6cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd1580e21eb0aedcefd533fb3355b6cc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Acl</b> (const <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_acl.html">Acl</a> &amp;orig)</td></tr>
-<tr class="memitem:ad7de9db61fea71372e052f8ed6af5585"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7de9db61fea71372e052f8ed6af5585"></a>
-<a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_acl.html">Acl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_acl.html">Acl</a> &amp;orig)</td></tr>
-<tr class="memitem:ac819f8ed676309e5c01caaa5ebdce543"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac819f8ed676309e5c01caaa5ebdce543"></a>
-const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getScheme</b> () const </td></tr>
-<tr class="memitem:a4b662f79dba502ec98dc03a6355928a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b662f79dba502ec98dc03a6355928a9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setScheme</b> (const std::string &amp;scheme)</td></tr>
-<tr class="memitem:a5ace7be529abdeb1c00a4978d8f3053e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ace7be529abdeb1c00a4978d8f3053e"></a>
-const std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getExpression</b> () const </td></tr>
-<tr class="memitem:adc4ae4eaf444e7ba8550598520661e37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc4ae4eaf444e7ba8550598520661e37"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setExpression</b> (const std::string &amp;expression)</td></tr>
-<tr class="memitem:a40af618f9dc86f69f69c85e9678d71c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40af618f9dc86f69f69c85e9678d71c6"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getPermissions</b> () const </td></tr>
-<tr class="memitem:a985653091b06ecdde86d31647ab0ea37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a985653091b06ecdde86d31647ab0ea37"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPermissions</b> (int32_t permissions)</td></tr>
+<tr class="memitem:a7d17ce27671290311890824997d22c58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d17ce27671290311890824997d22c58"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize</b> (::hadoop::OArchive &amp;a_, const char *tag) const </td></tr>
+<tr class="memitem:a6e94761b9b1d8717970bd867e0e59e26"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6e94761b9b1d8717970bd867e0e59e26"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>deserialize</b> (::hadoop::IArchive &amp;a_, const char *tag)</td></tr>
+<tr class="memitem:aa089b413be26d1d637bc87dcb9d5e93f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa089b413be26d1d637bc87dcb9d5e93f"></a>
+virtual const ::std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const </td></tr>
+<tr class="memitem:a256866116d7ef5b47e29d2e4470433df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a256866116d7ef5b47e29d2e4470433df"></a>
+virtual const ::std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>signature</b> () const </td></tr>
+<tr class="memitem:a4c2e31864d59d0993bee30c706947960"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c2e31864d59d0993bee30c706947960"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>validate</b> () const </td></tr>
+<tr class="memitem:a229b0a06c84a76217e40355a45fa1c88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a229b0a06c84a76217e40355a45fa1c88"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1txn_1_1_set_max_children_txn.html">SetMaxChildrenTxn</a> &amp;peer_) const </td></tr>
+<tr class="memitem:a080e7084ea2d8caa3ba6901d92dcf953"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a080e7084ea2d8caa3ba6901d92dcf953"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1txn_1_1_set_max_children_txn.html">SetMaxChildrenTxn</a> &amp;peer_) const </td></tr>
+<tr class="memitem:a44b1777986650ccc43d5d1f1dc903c6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44b1777986650ccc43d5d1f1dc903c6c"></a>
+virtual const ::std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getpath</b> () const </td></tr>
+<tr class="memitem:a23a242d2bcbc687abf74ba2f4669624d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23a242d2bcbc687abf74ba2f4669624d"></a>
+virtual ::std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getpath</b> ()</td></tr>
+<tr class="memitem:a3531d60c0abe87e95c2aad5868a7b46b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3531d60c0abe87e95c2aad5868a7b46b"></a>
+virtual int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>getmax</b> () const </td></tr>
+<tr class="memitem:aa4febd6399ccd4d7d167b0feabd8d69f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4febd6399ccd4d7d167b0feabd8d69f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setmax</b> (int32_t m_)</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="zookeeper_8hh_source.html">zookeeper.hh</a></li>
+<li>generated/<a class="el" href="zookeeper_8jute_8hh_source.html">zookeeper.jute.hh</a></li>
 </ul>
 </div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 3 2012 00:57:11 for ZooKeeper C++ Client Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2012 19:07:05 for zkcpp: A ZooKeeper C++ Client Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

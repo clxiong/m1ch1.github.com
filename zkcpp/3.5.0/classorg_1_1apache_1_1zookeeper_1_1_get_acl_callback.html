@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>ZooKeeper C++ Client Library: org::apache::zookeeper::GetAclCallback Class Reference</title>
+<title>zkcpp: A ZooKeeper C++ Client Library: org::apache::zookeeper::GetAclCallback Class Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">ZooKeeper C++ Client Library
+   <div id="projectname">zkcpp: A ZooKeeper C++ Client Library
    
    </div>
    
@@ -50,6 +50,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -72,6 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -91,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><b>org</b>      </li>
+      <li class="navelem"><a class="el" href="namespaceorg.html">org</a>      </li>
       <li class="navelem"><b>apache</b>      </li>
       <li class="navelem"><a class="el" href="namespaceorg_1_1apache_1_1zookeeper.html">zookeeper</a>      </li>
       <li class="navelem"><a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_get_acl_callback.html">GetAclCallback</a>      </li>
@@ -115,17 +117,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af2376dec88ea63ffe7c0c3f6421bd8c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_get_acl_callback.html#af2376dec88ea63ffe7c0c3f6421bd8c4">process</a> (<a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_return_code.html#ac8ceb382fd39b66f2d946f2dbc449535">ReturnCode::type</a> rc, const std::string &amp;path, const std::vector&lt; <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_acl.html">Acl</a> &gt; &amp;acl, const <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_znode_stat.html">ZnodeStat</a> &amp;stat)=0</td></tr>
+<tr class="memitem:aadb61bbc04fd21803b9b8df0711cab54"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_get_acl_callback.html#aadb61bbc04fd21803b9b8df0711cab54">process</a> (<a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_return_code.html#ac8ceb382fd39b66f2d946f2dbc449535">ReturnCode::type</a> rc, const std::string &amp;path, const std::vector&lt; <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1data_1_1_a_c_l.html">data::ACL</a> &gt; &amp;acl, const <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1data_1_1_stat.html">data::Stat</a> &amp;stat)=0</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Callback interface for <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_zoo_keeper.html#abbed9e85cba2088a6706ba194cd5d55c" title="Gets the acl associated with a znode.">ZooKeeper::getAcl()</a> operation. </p>
 </div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="af2376dec88ea63ffe7c0c3f6421bd8c4"></a>
+<a class="anchor" id="aadb61bbc04fd21803b9b8df0711cab54"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_get_acl_callback.html#af2376dec88ea63ffe7c0c3f6421bd8c4">org::apache::zookeeper::GetAclCallback::process</a> </td>
+          <td class="memname">virtual void <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_get_acl_callback.html#aadb61bbc04fd21803b9b8df0711cab54">org::apache::zookeeper::GetAclCallback::process</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceorg_1_1apache_1_1zookeeper_1_1_return_code.html#ac8ceb382fd39b66f2d946f2dbc449535">ReturnCode::type</a>&#160;</td>
           <td class="paramname"><em>rc</em>, </td>
@@ -139,13 +141,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_acl.html">Acl</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1data_1_1_a_c_l.html">data::ACL</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>acl</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1_znode_stat.html">ZnodeStat</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classorg_1_1apache_1_1zookeeper_1_1data_1_1_stat.html">data::Stat</a> &amp;&#160;</td>
           <td class="paramname"><em>stat</em>&#160;</td>
         </tr>
         <tr>
@@ -169,13 +171,13 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/<a class="el" href="zookeeper_8hh_source.html">zookeeper.hh</a></li>
+<li>include/zookeeper/<a class="el" href="zookeeper_8hh_source.html">zookeeper.hh</a></li>
 </ul>
 </div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 3 2012 00:57:11 for ZooKeeper C++ Client Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2012 19:07:05 for zkcpp: A ZooKeeper C++ Client Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>

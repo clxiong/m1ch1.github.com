@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>ZooKeeper C++ Client Library: Main Page</title>
+<title>zkcpp: A ZooKeeper C++ Client Library: Main Page</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -27,7 +27,7 @@
   
   
   <td style="padding-left: 0.5em;">
-   <div id="projectname">ZooKeeper C++ Client Library
+   <div id="projectname">zkcpp: A ZooKeeper C++ Client Library
    
    </div>
    
@@ -50,6 +50,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -85,14 +86,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">ZooKeeper C++ Client Library Documentation</div>  </div>
+<div class="title">zkcpp: A ZooKeeper C++ Client Library Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><h2><a class="anchor" id="quick"></a>
+Quickstart</h2>
+<h3><a class="anchor" id="dep"></a>
+Dependencies</h3>
+<p>Install all the dependencies:</p>
+<ul>
+<li>git</li>
+<li>ant</li>
+<li>cmake</li>
+<li>log4cxx</li>
+<li>boost-thread</li>
+<li>boost-system</li>
+</ul>
+<h3><a class="anchor" id="build"></a>
+Building and Installing</h3>
+<p>Clone the git repository:</p>
+<div class="fragment"><pre class="fragment">git://github.com/m1ch1/zookeeper.git
+</pre></div><p>This will create a local repository under zookeeper/ directory.</p>
+<div class="fragment"><pre class="fragment">cd zookeeper/
+ZKHOME=`pwd`
+ant
+</pre></div><p>Now, compile the C++ client and install:</p>
+<div class="fragment"><pre class="fragment">cd $ZKHOME/src/contrib/zkcpp
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+</pre></div><p>This will install a shared library <code>libzkcpp.so</code> under <code>/usr/local/lib</code> and include headers under <code>/usr/local/include/zookeeper</code>.</p>
+<h3><a class="anchor" id="server"></a>
+Starting a ZooKeeper Server in Standalone mode</h3>
+<div class="fragment"><pre class="fragment">cp $ZKHOME/conf/zoo_sample.cfg $ZKHOME/conf/zoo.cfg
+$ZKHOME/bin/zkServer.sh start
+echo ruok | nc localhost 2181
+</pre></div><p>You can find more information about the standalone mode in <a href="http://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html#sc_InstallingSingleMode">ZooKeeper Getting Started Guide</a>.</p>
+<h3><a class="anchor" id="hello"></a>
+Hello, world!</h3>
+<h2><a class="anchor" id="model"></a>
+Data Model</h2>
+<h2><a class="anchor" id="async"></a>
+Asynchronous and Synchronous APIs</h2>
+<h2><a class="anchor" id="watch"></a>
+Watches</h2>
+<h2><a class="anchor" id="stat"></a>
+Znode Stat</h2>
+<h2><a class="anchor" id="auth"></a>
+Authentication and Authorization</h2>
+</div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 3 2012 00:57:11 for ZooKeeper C++ Client Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 1 2012 19:07:05 for zkcpp: A ZooKeeper C++ Client Library by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.0
 </small></address>
