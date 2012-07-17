@@ -7,4 +7,5 @@ ln -s `pwd`/screenrc $HOME/.screenrc
 ln -s `pwd`/vimrc $HOME/.vimrc
 
 # git config
+git config --global core.editor vim
 git config --global diff.tool vimdiff
