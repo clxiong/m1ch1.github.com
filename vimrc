@@ -1,4 +1,3 @@
-"
 " Save this file to ~/.vimrc
 "
 set autoindent      " take indent from the previous line
