@@ -1,0 +1,43 @@
+#!/bin/bash
+#
+# Copyright (C) 2007,
+#   Geoff Buchan    <geoffrey.buchan@gmail.com>
+# Based on the script cvsvimdiff, written by
+#   Stefano Zacchiroli  <zack@cs.unibo.it>
+#   Enrico Tassi    <tassi@cs.unibo.it>
+#
+# This is free software, you can redistribute it and/or modify it under the
+# terms of the GNU General Public License version 2 as published by the Free
+# Software Foundation.
+#
+
+vimdiff="vimdiff"
+suffix="svnvimdiff"
+if [[ $# < 0 || $1 == "--help" || $1 == "-h" ]] ; then
+    echo "svnvimdiff - Displays output of 'svn diff' using vimdiff"
+    echo ""
+    echo "svnvimdiff [file...]"
+    echo ""
+    echo "If file is omitted it will cycle through all changed files under"
+    echo "the current directory recursively."
+    exit 1
+fi
+
+patch=`mktemp -p /tmp suffix.XXXXXX`
+orig=`mktemp -p /tmp $suffix.XXXXXX`
+trap "rm -f $patch $orig" EXIT
+files=$*
+if [ $# -eq 0 ] ; then
+    # No file given, so loop over all files svn st says have changed
+    files=$(svn st 2> /dev/null | grep -e "^[AMU]" | cut -c 3-)
+fi
+for f in $files; do
+    if ! [ -f "$f" ] ; then
+        continue ;
+    fi
+    cp "$f" $orig
+    svn diff $f > $patch
+    if ! [ $? -eq 0 ]; then break; fi
+    patch -R -p0 $orig $patch
+    $vimdiff $orig $f
+done
