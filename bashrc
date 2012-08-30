@@ -12,4 +12,4 @@ export CCACHE_PREFIX=distcc
 export CCACHE_BASEDIR=/compile/ccache
 export CCACHE_DIR=/compile/ccache
 alias make='make -j 16'
-
+export SVN_EDITOR=vim
