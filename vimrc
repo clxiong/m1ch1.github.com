@@ -10,6 +10,10 @@ syntax on           " highlight syntax
 set showmatch       " show matching parenthesis
 set makeprg=gmake   " use gmake for compilation
 set tags=~/.tags
+set hlsearch
+hi Search ctermbg=grey
+nnoremap <CR> :noh<CR><CR>
+
 "#autocommand FileType java set tags=~/.tags
 
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE

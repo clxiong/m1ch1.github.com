@@ -7,6 +7,7 @@ ln -s `pwd`/bashrc $HOME/.bashrc
 ln -s `pwd`/bash_profile $HOME/.bash_profile
 ln -s `pwd`/screenrc $HOME/.screenrc
 ln -s `pwd`/vimrc $HOME/.vimrc
+ln -s `pwd`/zshrc $HOME/.zshrc
 
 # git config
 git config --global core.editor vim
