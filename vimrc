@@ -51,7 +51,7 @@ imap jk <Esc>
 nnoremap <CR> :noh<CR><CR>
 
 " Highlight lines over 80 characters.
-:au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+:au BufWinEnter *.cc,*.h,*.java let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 
 " Highlight trailing spaces
 highlight ExtraWhitespace ctermbg=red
@@ -61,3 +61,7 @@ au InsertLeave * match ExtraWhiteSpace /\s\+$/
 
 " Pathogen stuff
 call pathogen#infect()
+
+" Display tab characters
+set list
+set listchars=tab:>.
